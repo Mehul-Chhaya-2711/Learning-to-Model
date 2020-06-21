@@ -81,3 +81,10 @@ days_to_get_flatlined   = intercept + (population*population_coeff) + (health_ex
 
 
 print("Days to get flatlined:{}".format(min_report_dt + timedelta(days=days_to_get_flatlined)))             #add the days to minimum report date to get date when it will flatlined
+
+#Ouput in case of INDIA : 13th March 2020
+#This model for the lack of data and sheer neglecttowards proper feature selection fails to give an accurate picture
+
+#Reason for taking population and health expenditure are as follows
+#1. Population: The higher the number of subjects higher will be the liklihood of infections increasing. Considering all the nations of the world are of equal surface area with varying density of population per sq meter which will be directly proportional to the popoulation size
+#2. Health expense as % of GDP: The higher the %age, more is the capability to fight against the pandemic
